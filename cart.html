@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cart.css">
+	<script src="./js/bicicletas.js"></script>
+  <script src="./js/inventarioService.js"></script>
+  <script src="./js/invoiceService.js"></script>
+  <script src="./js/cartService.js" defer></script>
+	<script src="./js/cart.js" defer></script>
+	<title>Bicicletas puntoJson - Carrito</title>
+</head>
+<body>
+  <header>
+		<nav>
+			<a href="./index.html"><img src="./img/logo.png" alt="Logo" id="logo"></a>
+			<div>
+				<a href="#">MTB</a>
+				<a href="#">Ruta</a>
+				<a href="./cart.html" id="cart"><img src="./img/iconos/shopping-cart.png" alt=""><span id="cuenta-carrito">0</span></a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<p id="carrito-vacio">Ups! El carrito está vacío, <a href="./index.html">elige algunos productos</a></p>
+		<section id="cart-container">
+		</section>
+  <section id="totales">
+    <p>Total unidades: <span id="cantidad">0</span></p>
+    <p>Total precio: $<span id="precio">0</span></p>
+    <button id="btn-comprar" disabled>Comprar</button>
+    <button id="reiniciar">Reiniciar</button>
+  </section>
+
+  <section id="factura-section" class="escondido">
+    <div id="factura-container"></div>
+    <div class="factura-acciones">
+      <button id="btn-imprimir" type="button">Imprimir</button>
+      <button id="btn-seguir" type="button">Seguir comprando</button>
+    </div>
+  </section>
+
+</main>
+	
+</body>
+</html>

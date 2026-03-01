@@ -1,0 +1,134 @@
+#cart-container{
+  max-width: 500px;
+  margin: auto;
+}
+
+.tarjeta-producto{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  gap: 20px;
+}
+
+.tarjeta-producto img{
+  height: 100%;
+}
+
+.tarjeta-producto h3{
+  width: 130px;
+}
+.tarjeta-producto div{
+  background-color: var(--color-acento-claro);
+  padding: 3px;
+  border-radius: 5px;
+}
+
+#totales{
+  text-align: center;
+}
+
+#carrito-vacio{
+  text-align: center;
+}
+
+.tarjeta-producto{
+  height: auto;
+  padding: 10px 0;
+}
+
+.tarjeta-producto .info{
+  flex: 1;
+}
+
+.tarjeta-producto .controles{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--color-acento-claro);
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.tarjeta-producto .controles button{
+  background-color: var(--color-acento);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.stock-mini{
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+#factura-section{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.factura-card{
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 14px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+  background: white;
+}
+
+.factura-header{
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.factura-tabla{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.factura-tabla th, .factura-tabla td{
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 8px;
+}
+
+.factura-tabla th{
+  text-align: left;
+}
+
+.factura-totales{
+  margin-top: 12px;
+  text-align: right;
+}
+
+.factura-total-final{
+  font-size: 1.1rem;
+}
+
+.factura-acciones{
+  display:flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.factura-acciones button{
+  background-color: var(--color-acento);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+@media print{
+  header, #totales, #cart-container, footer, #reiniciar, #carrito-vacio{
+    display:none !important;
+  }
+  #factura-section{
+    margin: 0;
+  }
+}
